@@ -36,7 +36,7 @@ func main() {
 
 	if err := server.Subscribe(
 		server.NewSubscriber(
-			"topic.example",
+			"/ping",
 			subscriber.Handler,
 		),
 	); err != nil {
